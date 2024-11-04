@@ -18,7 +18,7 @@ public class Account {
         return balance;
     }
 
-    public double deposit(double amount){
+    public double addAmount(double amount){
         if (amount > 0){
             balance += amount;
         }

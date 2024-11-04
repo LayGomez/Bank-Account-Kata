@@ -15,7 +15,7 @@ public class BankAccountTest {
     @DisplayName("Test depositar una cantidad positiva de dinero")
     void test_WhenDepositPositiveAmount_thenReturnBalance() {
         Account cuenta = new Account(1234,1000);
-        double result = cuenta.deposit(500);
+        double result = cuenta.addAmount(500);
         assertEquals(1500, cuenta.getBalance());
     }
 
