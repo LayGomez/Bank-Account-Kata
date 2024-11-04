@@ -18,9 +18,16 @@ public class Account {
         return balance;
     }
 
+
     public double addAmount(double amount){
         if (amount > 0){
             balance += amount;
+        }
+        return balance;
+    }
+    public double withDraw(double amount) {
+        if (amount <= balance) {
+            balance -= amount;
         }
         return balance;
     }
